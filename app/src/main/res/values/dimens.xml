@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="indentation_0">0dp</dimen>
+    <dimen name="indentation_4">4dp</dimen>
+    <dimen name="indentation_5">5dp</dimen>
+    <dimen name="indentation_8">8dp</dimen>
+    <dimen name="indentation_16">16dp</dimen>
+    <dimen name="indentation_32">32dp</dimen>
+
+    <dimen name="txt_size_6">6sp</dimen>
+    <dimen name="txt_size_10">10sp</dimen>
+    <dimen name="txt_size_12">12sp</dimen>
+    <dimen name="txt_size_14">14sp</dimen>
+    <dimen name="txt_size_16">16sp</dimen>
+    <dimen name="txt_size_18">18sp</dimen>
+    <dimen name="txt_size_32">32sp</dimen>
+    <dimen name="txt_size_36">36sp</dimen>
+
+    <dimen name="view_params_280">280dp</dimen>
+    <dimen name="view_params_188">188dp</dimen>
+
+</resources>

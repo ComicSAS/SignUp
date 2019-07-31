@@ -11,6 +11,7 @@
     <style name="AgreeCheckBox" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/white</item>
         <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
 
 </resources>

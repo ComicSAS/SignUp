@@ -18,4 +18,5 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="white_two">#fafafa</color>
+    <color name="light_grey">#b3ffffff</color>
 </resources>

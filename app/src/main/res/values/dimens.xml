@@ -17,5 +17,7 @@
 
     <dimen name="view_params_280">280dp</dimen>
     <dimen name="view_params_188">188dp</dimen>
+    <dimen name="text_size_34">34sp</dimen>
+    <dimen name="indentation_64">64dp</dimen>
 
 </resources>

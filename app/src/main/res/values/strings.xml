@@ -9,4 +9,10 @@
     <string name="enter_your_name_and_surname">Enter your name and surname</string>
     <string name="choose_password">Choose password</string>
     <string name="repeat_password">Repeat password</string>
+    <string name="welcome_to_obscuralight">WELCOME TO\nOBSCURALIGHT</string>
+    <string name="text_information">Our application is a consulting\nservice that allows you to quickly\nand easily obtain
+        reliable and\nnecessary information on any topic.
+    </string>
+    <string name="text_already_have_an_account">Already have an account?</string>
+    <string name="text_not_with_us_yet">Not with us yet?</string>
 </resources>

@@ -11,65 +11,68 @@
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/guideline_start"
+            android:id="@+id/guideline_sign_up_start"
             android:orientation="vertical"
             app:layout_constraintGuide_begin="@dimen/indentation_16"/>
 
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/guideline_end"
+            android:id="@+id/guideline_sign_up_end"
             android:orientation="vertical"
             app:layout_constraintGuide_end="@dimen/indentation_16"/>
 
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/guideline_top"
+            android:id="@+id/guideline_sign_up_top"
             app:layout_constraintGuide_begin="@dimen/indentation_16"
             android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/guideline_bottom"
+            android:id="@+id/guideline_sign_up_bottom"
             android:orientation="horizontal"
             app:layout_constraintGuide_end="@dimen/indentation_16"/>
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:textSize="@dimen/txt_size_36"
-              android:fontFamily="sans-serif"
-              android:textStyle="bold"
-              android:textColor="@color/white"
-              android:layout_marginTop="@dimen/indentation_16"
-              app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-              app:layout_constraintStart_toEndOf="@+id/guideline_start"
-              app:layout_constraintTop_toBottomOf="@+id/guideline_top"
-              android:text="@string/text_sing_up"
-              android:id="@+id/tv_sign_up"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_36"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/indentation_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_sign_up_end"
+            app:layout_constraintStart_toEndOf="@+id/guideline_sign_up_start"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_sign_up_top"
+            android:text="@string/text_sing_up"
+            android:id="@+id/tv_sign_up_sign_up"/>
 
 
     <LinearLayout
-            android:id="@+id/linear_layout_box"
+            android:id="@+id/linear_layout_sign_up_box"
             android:layout_width="@dimen/indentation_0"
             android:layout_height="wrap_content"
             android:background="@drawable/background_sign_up"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_sign_up_end"
             android:layout_marginEnd="@dimen/indentation_16"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintStart_toStartOf="@+id/guideline_sign_up_start"
             android:layout_marginStart="@dimen/indentation_16"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/indentation_32"
             android:paddingTop="@dimen/indentation_16"
             android:paddingBottom="@dimen/indentation_16"
-            app:layout_constraintTop_toBottomOf="@+id/tv_sign_up">
+            app:layout_constraintTop_toBottomOf="@+id/tv_sign_up_sign_up">
+
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_username"
+                android:id="@+id/til_sign_up_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:errorEnabled="true">
             <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_username"
+                    android:id="@+id/et_sign_up_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_your_name_and_surname"
@@ -79,12 +82,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_password"
+                android:id="@+id/til_sign_up_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:errorEnabled="true">
             <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_password"
+                    android:id="@+id/et_sign_up_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/choose_password"
@@ -94,12 +97,12 @@
                     android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_repeat_password"
+                android:id="@+id/til_sign_up_repeat_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:errorEnabled="true">
             <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_repeat_password"
+                    android:id="@+id/et_sign_up_repeat_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/repeat_password"
@@ -111,26 +114,26 @@
     </LinearLayout>
 
     <LinearLayout
-            android:id="@+id/linear_layout_agree"
+            android:id="@+id/linear_layout_sign_up_agree"
             android:layout_width="@dimen/indentation_0"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintStart_toEndOf="@+id/guideline_start"
+            app:layout_constraintStart_toEndOf="@+id/guideline_sign_up_start"
             android:layout_marginStart="@dimen/indentation_16"
             android:layout_marginTop="@dimen/indentation_8"
-            app:layout_constraintTop_toBottomOf="@+id/linear_layout_box"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_sign_up_box"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_sign_up_end"
             android:layout_marginEnd="@dimen/indentation_8">
         <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/linear_layout_box"
-                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_sign_up_box"
+                app:layout_constraintStart_toStartOf="@+id/guideline_sign_up_start"
                 android:theme="@style/AgreeCheckBox"
-                android:id="@+id/agree_check_box"/>
+                android:id="@+id/sign_up_agree_check_box"/>
 
         <TextView
-                android:id="@+id/tv_i_agree_with"
+                android:id="@+id/tv_sign_up_i_agree_with"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/txt_size_12"
@@ -140,7 +143,7 @@
                 android:text="@string/text_i_agree_with"
         />
         <TextView
-                android:id="@+id/tv_terms_and_privacy"
+                android:id="@+id/tv_sign_up_terms_and_privacy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/txt_size_12"
@@ -152,13 +155,13 @@
         />
     </LinearLayout>
 
-    <Button android:id="@+id/btn_sign_up"
+    <Button android:id="@+id/btn_sign_up_sign_up"
             android:layout_width="@dimen/indentation_0"
             android:layout_height="@dimen/indentation_32"
             android:background="@drawable/background_sign_up"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-            app:layout_constraintTop_toBottomOf="@id/linear_layout_agree"
-            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_sign_up_end"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_sign_up_agree"
+            app:layout_constraintStart_toEndOf="@id/guideline_sign_up_start"
             android:layout_marginEnd="@dimen/indentation_16"
             android:layout_marginStart="@dimen/indentation_16"
             android:layout_marginTop="@dimen/indentation_32"
@@ -169,12 +172,12 @@
             android:textSize="@dimen/txt_size_14"/>
 
     <TextView
-            android:id="@+id/tv_you_can_sign_up_with"
+            android:id="@+id/tv_sign_up_you_can_sign_up_with"
             android:layout_width="@dimen/indentation_0"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/btn_sign_up"
-            app:layout_constraintStart_toEndOf="@id/guideline_start"
-            app:layout_constraintEnd_toStartOf="@id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@id/btn_sign_up_sign_up"
+            app:layout_constraintStart_toEndOf="@id/guideline_sign_up_start"
+            app:layout_constraintEnd_toStartOf="@id/guideline_sign_up_end"
             android:layout_marginTop="@dimen/indentation_16"
             android:text="@string/text_you_can_sign_up_with"
             android:textSize="@dimen/txt_size_16"
@@ -185,23 +188,23 @@
     />
 
     <ImageView
-            android:id="@+id/iv_facebook_login"
+            android:id="@+id/iv_sign_up_facebook_login"
             android:layout_width="@dimen/indentation_32"
             android:layout_height="@dimen/indentation_32"
             android:layout_marginTop="@dimen/indentation_16"
             android:src="@mipmap/facebook_logo"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_you_can_sign_up_with"/>
+            app:layout_constraintTop_toBottomOf="@id/tv_sign_up_you_can_sign_up_with"/>
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-            app:layout_constraintStart_toEndOf="@+id/guideline_start"
-            app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_sign_up_end"
+            app:layout_constraintStart_toEndOf="@+id/guideline_sign_up_start"
+            app:layout_constraintBottom_toTopOf="@id/guideline_sign_up_bottom"
             android:orientation="horizontal">
         <TextView
-                android:id="@+id/tv_have_an_account"
+                android:id="@+id/tv_sign_up_have_an_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/txt_size_12"
@@ -211,7 +214,7 @@
                 android:text="@string/text_have_an_account"
         />
         <TextView
-                android:id="@+id/tv_sign_in"
+                android:id="@+id/tv_sign_up_sign_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/txt_size_14"
